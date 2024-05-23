@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+ </head>
+ <body>
+    <nav>
+         <i class="fa-solid fa-note-sticky"></i>
+        <input type="text" placeholder="Search Note" class="search-input">
+        <i class="fa-solid fa-moon"></i>
+    </nav>
+
+    <section class="notes-section">
+      <i class="fa-solid fa-plus reposnsive-add-new-note-btn"></i>
+      <aside>
+         <div class="create-new-note">
+            <i class="fa-solid fa-xmark responsive-close-add-note-btn"></i>
+            <button class="open-new-note-modal">Add a Note</button>
+            <h2>Notes (<span class="notes-counter">0</span>)</h2>
+
+            <div class="notes-thumbnail-container">
+            </div>
+         </div>
+      </aside>
+
+      <main class="notes-container">
+      </main>
+    </section> 
+
+    <div class="background-overlay"></div>
+
+    <div class="create-new-note-modal">
+      <i class="fa-solid fa-xmark close-modal-btn"></i>
+      <br>
+      <input type="text" placeholder="Title" required  class="note-title">
+      <br>
+      <textarea class="note-cont" placeholder="Start Tying"></textarea>
+      <br>
+      <button class="save-note-btn">Create Note</button>
+    </div>
+
+    <div class="edit-note-modal">
+      <i class="fa-solid fa-xmark close-edit-modal-btn"></i>
+      <br>
+      <input type="text" placeholder="Title" class="edit-note-title">
+      <br>
+      <textarea class="edit-note-cont" placeholder="Start Tying"></textarea>
+      <br>
+      <button class="save-edits-btn">Save Changes</button>
+    </div>
+ </body>
+ </html>
